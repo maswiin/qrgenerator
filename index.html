@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Generator</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <style>
+        #qrcode {
+            margin: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>QR Generator</h1>
+    <label for="input1">Input 1:</label>
+    <input type="text" id="input1"><br>
+    <label for="input2">Input 2:</label>
+    <input type="text" id="input2"><br>
+    <label for="awalSeri">Awal Seri:</label>
+    <input type="text" id="awalSeri"><br>
+    <label for="akhirSeri">Akhir Seri:</label>
+    <input type="text" id="akhirSeri"><br>
+    <button onclick="generateQRCode()">Generate</button>    <div id="qrcodes"></div><br>
+    </center>
+
+    <script>
+        function generateQRCode() {
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var awalSeri = document.getElementById("awalSeri").value;
+            var akhirSeri = document.getElementById("akhirSeri").value;
+            var input2 = document.getElementById("input2").value;
+            var qrcodesContainer = document.getElementById("qrcodes");
+            qrcodesContainer.innerHTML = "";
+
+            for (var seri = parseInt(awalSeri); seri <= parseInt(akhirSeri); seri++) {
+                var qrText = input1 + seri+input2;
+                var qrcode = new QRCode(document.createElement("div"), {
+                    text: qrText,
+                    width: 250,
+                    height: 250
+                });
+                var qrContainer = document.createElement("div");
+                qrContainer.appendChild(qrcode._el);
+                
+                var qrName = document.createElement("p");
+                qrName.innerText = qrText;
+                qrContainer.appendChild(qrName);
+
+                qrcodesContainer.appendChild(qrContainer);
+            }
+        }
+    </script>
+</body>
+</html>
