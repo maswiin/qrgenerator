@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Generator bymaswin</title>
+    <script src="qrcode.min.js"></script>
+    <link rel="stylesheet" href="styleqr.css">
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Generator</h1>
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" placeholder="Masukan kode di depan seri">
+        <label for="input2">Input 2:</label>
+        <input type="text" id="input2" placeholder="Masukan kode di belakang seri">
+        <label for="awalSeri">Seri Awal:</label>
+        <input type="text" id="awalSeri" placeholder="Masukan seri awal">
+        <label for="akhirSeri">Seri Akhir:</label>
+        <input type="text" id="akhirSeri" placeholder="Masukan seri akhir">
+        <button onclick="generateQRCode()">Generate</button>
+        <div class="qrcodes-container" id="qrcodes"></div>
+    </div>
+
+    <script src="qrcode.js"></script>
+        <footer>
+        <div class="container">
+            <p>&copy; 2023 QR Generator by<a href="https://api.whatsapp.com/send/?phone=6282138321123">maswin</a>
+            All rights reserved
+            </p>
+        </footer>
+</body>
+</html>

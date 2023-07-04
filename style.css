@@ -1,0 +1,66 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+   
+}
+
+.tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.tab:hover {
+    background-color: #45a049;
+    text-align-last: margin-bottom;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: center;
+}
