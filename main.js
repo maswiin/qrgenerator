@@ -1,6 +1,5 @@
 // Data pengguna
 var users = [
-  nek di HASH, ngko password'e dd ky kie win var users = [
   { username: "", password: "$2b$10$7XV0p7aCk6ixLzjO.hoefuMfqo1pAWDCB.8xPfhCmCh0nqHwo4Haq" }, // Encrypted: tfcrdz1
   { username: "yhnujm", password: "$2b$10$YcNECJ9yj27Nv.KI0FjBZ.Jd6X./TbNRZ.xQQckCzD.ZXoT7VeIBO" }, // Encrypted: plmnko2
   { username: "xftyhn", password: "$2b$10$iW3CT6K1Xu7rDliqsuqfTuwFLCRoG3WsBX7vr06zxHa0LLnMCbw7S" }, // Encrypted: ijbvfr3
