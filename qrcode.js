@@ -23,12 +23,3 @@
 
                 qrcodesContainer.appendChild(qrContainer);
             }
-        // Check if page is refreshed or accessed after a certain period
-        var lastVisitedTime = localStorage.getItem("lastVisitedTime");
-        if (lastVisitedTime && Date.now() - lastVisitedTime > 600000) {
-            localStorage.clear();
-            window.location.href = "index.html";
-        } else {
-            localStorage.setItem("lastVisitedTime", Date.now());
-        }
-        }
