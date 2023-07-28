@@ -23,3 +23,4 @@
 
                 qrcodesContainer.appendChild(qrContainer);
             }
+        }
